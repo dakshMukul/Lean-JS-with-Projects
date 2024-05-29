@@ -1,0 +1,101 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 0 10px;
+}
+
+:root{
+    --btn: #dbdbdb;
+    --btn-hover: #cacaca;
+    --team-bg: #f0f0f0;
+    --modal-bg: rgba(141, 141, 141, 0.541);
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--btn);
+    cursor: pointer;
+}
+
+header > button:hover{
+    background-color: var(--btn-hover);
+}
+
+main{
+    display: flex;
+}
+
+main > div{
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 450px;
+}
+
+.employeeListContainer{
+    width: 30%;
+}
+.employeeProfileContainer{
+    width: 70%;
+}
+
+.employeeListContainer, 
+.employeeProfileContainer{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.employeeListContainer__title,
+.employeeProfileContainer__title{
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.employeeContainer{
+    background-color: var(--team-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.employeeContainer:hover{
+    cursor: pointer;
+    background-color: var(--modal-bg);
+}
+
+.employeeContainer > h1 {
+    font-size: 16px;
+}
+
+.employeeInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    display: none;
+}
+
+.selected{
+    background-color: var(--modal-bg);
+}
